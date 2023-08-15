@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png"  type="image/x-icon">
+    <title>AXV Designs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+    <div class="left-container">
+        <img src="undraw_design_team_re_gh2d.svg" alt="Image of two people designing">
+    </div>
+    <div class="right-container">
+  <form id="businessForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br>
+
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company" placeholder="Name of your company?" required><br>
+
+    <label for="workEmail">Work Email:</label>
+    <input type="email" id="workEmail" name="workEmail" placeholder="Enter your work email" required><br>
+
+    <label for="companySize">Company Size:</label>
+    <select id="companySize" name="companySize" required>
+        <option value="" disabled selected> What's your company size?</option>
+        <option value="0-10">0-10</option>
+        <option value="11-50">11-50</option>
+        <option value="51-100">51-100</option>
+    </select><br>
+
+    <label for="fundingStage">Funding Stage:</label>
+    <select id="fundingStage" name="fundingStage">
+        <option value="" selected>Select funding stage (optional)</option>
+      <option value="under ₦100k">under ₦100k</option>
+      <option value="₦100k - ₦500k">₦100k - ₦500k</option>
+      <option value="₦500k - ₦1m">₦500k - ₦1m</option>
+    </select><br><br>
+
+    <label for="message">Any Other Message:</label>
+    <textarea id="message" name="message" placeholder="Enter additional message"></textarea><br>
+
+    <div class="button-container">
+        <button type="submit" id="submitButton">Submit</button>
+    </div>
+
+    <input type="hidden" id="applicantName" name="applicantName" value="Afolabi Saheedat">
+    <input type="hidden" id="applicantEmail" name="applicantEmail" value="afolabisaheedat1@gmail.com">
+  </form>
+    </div>
+    </div>
+
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+          <img src="undraw_super_thank_you_re_f8bo.svg" alt="Thank You Image" class="popup-image">
+          <p class="popup-text">Thank you for filling the form!</p>
+          <button type="submit" id="closePopup" class="popup-button">Okay</button>
+        </div>
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
