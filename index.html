@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png"  type="image/x-icon">
+    <link rel="icon" href="images/favicon.png"  type="image/x-icon">
     <title>AXV Designs</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 <body>
    <div class="container">
     <div class="left-container">
-        <img src="undraw_design_team_re_gh2d.svg" alt="Image of two people designing">
+        <img src="images/undraw_design_team_re_gh2d.svg" alt="Image of two people designing">
     </div>
     <div class="right-container">
   <form id="businessForm">
@@ -50,7 +50,10 @@
     <textarea id="message" name="message" placeholder="Enter additional message"></textarea><br>
 
     <div class="button-container">
-        <button type="submit" id="submitButton">Submit</button>
+        <button type="submit" id="submitButton">
+          <span id="buttonText">Submit</span>
+          <span id="loadingSpinner" class="hidden">Submitting...</span>
+        </button>
     </div>
 
     <input type="hidden" id="applicantName" name="applicantName" value="Afolabi Saheedat">
@@ -61,11 +64,18 @@
 
     <div id="thankYouPopup" class="popup">
         <div class="popup-content">
-          <img src="undraw_super_thank_you_re_f8bo.svg" alt="Thank You Image" class="popup-image">
+          <img src="images/undraw_super_thank_you_re_f8bo.svg" alt="Thank You Image" class="popup-image">
           <p class="popup-text">Thank you for filling the form!</p>
-          <button type="submit" id="closePopup" class="popup-button">Okay</button>
+          <button type="submit" id="closePopup" class="popup-button">Yay Okay</button>
         </div>
       </div>
+      <div id="errorPopup" class="popup">
+        <div class="popup-content">
+          <img src="images/undraw_dreamer_re_9tua.svg" alt="An error describing image" class="popup-image">
+          <p class="popup-text">Form submission failed. Please try again later.</p>
+          <button type="submit" id="closeErrorPopup" class="popup-button">Aw Snap!</button>
+        </div>
+      </div>      
       
     <script src="script.js"></script>
 </body>

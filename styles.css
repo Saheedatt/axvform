@@ -11,7 +11,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 20px;
     font-family: 'Lato', sans-serif;
     border: 5px solid #132e35;
@@ -30,7 +31,7 @@ body{
 }
 
 .right-container::before {
-    content: "AXV.";
+    content: "AXV";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,8 +98,12 @@ button:hover {
     background-color: #53636a;
 }
 
-
-
+input[placeholder]{
+    padding-left: 6px;
+}
+.hidden {
+    display: none;
+}
 .popup {
     display: none;
     position: fixed;
@@ -108,7 +113,7 @@ button:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-  }
+}
   
 .popup-content {
     position: absolute;
@@ -135,7 +140,6 @@ button:hover {
 .popup-text{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    text-transform: capitalize;
     margin-bottom: 5px;
     color: #69818d;
 }
@@ -157,5 +161,9 @@ button:hover {
     img{
         width: 500px;
         height: 250px;;
+    }
+    .popup-image {
+        max-width: 300px;
+        margin-bottom: 10px;
     }
 }

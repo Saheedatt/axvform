@@ -10,9 +10,9 @@ This is a simple web application that demonstrates how to create a business form
 - Submits the form data to a server using the Fetch API.
 - Demonstrates usage of modern JavaScript features for form handling.
 
-## Sample Screenshots
+## Sample Screenshot
 
-![Screenshot of Project](axv.png)
+![Screenshot of Project](images/avxdesign.png)
 
 ## Technologies Used
 
@@ -23,6 +23,5 @@ This is a simple web application that demonstrates how to create a business form
 
 ## Acknowledgments
 
-- This project was created for educational purposes to showcase form handling and popup messages in web development.
+- This project was created for educational purposes to showcase form handling and popup messages in web applications.
 - The popup message and form design are inspired by common UI patterns.
-
